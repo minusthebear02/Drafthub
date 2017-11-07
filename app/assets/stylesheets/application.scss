@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    padding-top: 50px;
+}
+
+.navbar {
+		background-color: #3B5B70;
+		border: none !important;
+    color: white !important;
+		margin-bottom: 0;
+		
+		a {
+			color: white;
+		}
+}
+
+a.navbar-brand {
+    margin-left: 35px;
+    transition: all 0.3s;
+
+        &:hover {
+            color: #F6AE2D;
+            font-size: 2rem;
+            margin-left: 30px;
+        }
+}
+
+.navbar-toggle {
+	border: 1px solid white !important;
+
+	.icon-bar {
+		border: 1px solid white !important;
+	}
+}
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
