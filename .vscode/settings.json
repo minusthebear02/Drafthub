@@ -1,3 +1,4 @@
 {
-    "auto-close-tag.enableAutoCloseTag": true
+    "auto-close-tag.enableAutoCloseTag": true,
+    "auto-close-tag.activationOnLanguage": "ruby"
 }

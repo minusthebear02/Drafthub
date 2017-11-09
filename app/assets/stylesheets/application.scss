@@ -19,9 +19,9 @@ body {
 }
 
 .navbar {
-		background-color: #3B5B70;
+		background-color: #3B5;
 		border: none !important;
-    color: white !important;
+    	color: white !important;
 		margin-bottom: 0;
 		
 		a {
@@ -34,7 +34,7 @@ a.navbar-brand {
     transition: all 0.3s;
 
         &:hover {
-            color: #F6AE2D;
+			color: white;
             font-size: 2rem;
             margin-left: 30px;
         }
