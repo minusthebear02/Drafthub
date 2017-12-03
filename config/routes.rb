@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :leagues
   devise_for :users
-get 'about' => 'welcome#about'
+  get 'about' => 'welcome#about'
 
-root 'welcome#index'
+  root 'welcome#index'
 end

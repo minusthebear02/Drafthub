@@ -1,19 +1,12 @@
 <div class="jumbotron">
-    <h1 class="title">Draft Hub</h1>
+    <div class="container welcome-header">
+        <h1 class="title">Draft Hub</h1>
 
-    <div class="container-fluid">
-        <div class="row">
-        
-            <div class="col-md-4">
-                <%= link_to "Create New League", root_path, class: "jumbo-link" %>
-            </div>
-
-            <div class="col-md-4">
-                <%= link_to "My Draft Office", root_path, class: "jumbo-link" %>
-            </div>
-
-            <div class="col-md-4">
-                <%= link_to "Do something else", root_path, class: "jumbo-link" %>
+        <div class="container">
+            <div class="row welcome-buttons">
+                <%= link_to "Browse All Leagues", leagues_path, class: "jumbo-link" %>
+                <%= link_to "Create a League", new_league_path, class: "jumbo-link" %>
+                <%= link_to "My Leagues", root_path, class: "jumbo-link" %> 
             </div>
         </div>
     </div>

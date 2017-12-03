@@ -21,24 +21,28 @@ body {
 .navbar {
 		background-color: #3B5;
 		border: none !important;
-    	color: white !important;
 		margin-bottom: 0;
-		
+
 		a {
 			color: white;
+
+			&:hover {
+				color: black;
+			}
 		}
 }
 
 a.navbar-brand {
-    margin-left: 35px;
-    transition: all 0.3s;
+	margin-left: 35px;
+	transition: all 0.3s;
 
-        &:hover {
-			color: white;
-            font-size: 2rem;
-            margin-left: 30px;
-        }
+	&:hover {
+		color: white;
+		font-size: 2rem;
+		margin-left: 30px;
+	}
 }
+
 
 .navbar-toggle {
 	border: 1px solid white !important;
@@ -48,7 +52,51 @@ a.navbar-brand {
 	}
 }
 
+.user-button {
+	padding: 5px 20px;
+	background-color: #3B5;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	transition: ease-in-out, .3s ease-in-out;
 
+	&:hover {
+		background-color: #898989;
+		text-decoration: none;
+		color: white;
+		cursor: pointer;
+	}
+
+	&:focus {
+		text-decoration: none;
+		color: lightgrey;
+	}
+}
+
+.button-cancel {
+	background-color: #DD5458;
+}
+
+.main-form {
+	
+	h2 {
+		text-align: center;
+	 }
+	
+	.text-field {
+		width: 100%;
+		line-height: 2.7rem;
+		margin-bottom: 25px;
+		transition: ease-in-out, .3s ease-in-out;
+	
+		&:focus {
+			border: 2px solid #3B5;
+			line-height: 3.2rem;
+			outline: none;
+			margin-bottom: 19px;
+		}
+	}
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";

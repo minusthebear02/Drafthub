@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="league-heading">All Leagues</h1>
+
+<div class="container">
+  <div class="col-md-8 col-md-offset-2">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-md-3">Name</th>
+          <th class="col-md-2">Created By</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @leagues.each do |league| %>
+          <tr>
+            <td><%= link_to league.name, league %></td>
+            <td><%= league.user.email%></td>
+            <% if league.user == current_user %>
+              <td><%= link_to 'Edit', edit_league_path(league), class: "user-button" %></td>
+              <td><%= link_to 'Destroy', league, class: "user-button button-cancel", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New League', new_league_path, class: "user-button" %>
+  </div>
+</div>
