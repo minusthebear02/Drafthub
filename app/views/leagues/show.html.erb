@@ -1,6 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="league-heading"><%= @league.name %></h1>
+<div class="container-fluid">
+  <h1 class="league-heading"><%= @league.name %></h1>
 
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <table>
+        <thead>
+          <tr>
+            <th>Teams</th>
+            <th>Owners</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @league.teams.each do |team| %>
+            <tr>
+              <td><%= link_to team.name, league_team_path(@league, team) %></td>
+              <td><%= team.user.email %>
+              <% if current_user == team.user %>
+                <td>
+                  <%= link_to 'Edit Team', edit_league_team_path(team.league, team), class: "user-button"%>
+                  <%= link_to 'Delete Team', [team.league, team], method: :delete, class: "user-button button-cancel" %>
+                </td>
+              <% end %>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>  
+
+      <%= link_to 'Add Team', new_league_team_path(@league), class: "user-button" %> 
+    </div>
+  </div> 
+
+  
+</div>
 <%= link_to 'Edit', edit_league_path(@league) %> |
 <%= link_to 'Back', leagues_path %>
