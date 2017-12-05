@@ -1,15 +1,28 @@
 .league-heading {
   text-align: center;
   margin: 30px auto;
-}
 
-table {
-
-  thead {
-    border-bottom: 1px solid lightgrey;
+  h1 {
+    font-size: 50px;
   }
 
-  tbody tr {
-    height: 45px;
+  h3 {
+    font-size: 16px;
+    font-weight: 400px;
+  }
+}
+
+.league-table {
+  margin: 20px auto;
+  
+  table {
+
+    thead {
+      border-bottom: 1px solid lightgrey;
+    }
+
+    tbody tr {
+      height: 45px;
+    }
   }
 }

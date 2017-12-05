@@ -37,9 +37,10 @@ a.navbar-brand {
 	transition: all 0.3s;
 
 	&:hover {
-		color: white;
+		color: white !important;
 		font-size: 2rem;
 		margin-left: 30px;
+		background-color: inherit;
 	}
 }
 
@@ -70,6 +71,10 @@ a.navbar-brand {
 	&:focus {
 		text-decoration: none;
 		color: lightgrey;
+	}
+
+	&:visited {
+		color: white;
 	}
 }
 
