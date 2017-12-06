@@ -15,7 +15,8 @@
  */
 
 body {
-    padding-top: 50px;
+		padding-top: 50px;
+		color: #3d3d3d;
 }
 
 .navbar {
@@ -27,7 +28,7 @@ body {
 			color: white;
 
 			&:hover {
-				color: black;
+				color: #3d3d3d;
 			}
 		}
 }
@@ -53,6 +54,29 @@ a.navbar-brand {
 	}
 }
 
+.navbar-inner {
+	border-radius: 0px !important;
+	border-bottom-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+	background-color: #EFEFEF;
+	min-height: 0 !important;
+
+	.nav li {
+		display: inline-block;
+	}
+
+	a {
+		color: #3d3d3d;
+		margin-bottom: 0;
+		height: 45px;
+
+		&:hover {
+			background-color: #3d3d3d !important;
+			color: white;
+		}
+	}
+}
+
 .user-button {
 	padding: 5px 20px;
 	background-color: #3B5;
@@ -62,7 +86,7 @@ a.navbar-brand {
 	transition: ease-in-out, .3s ease-in-out;
 
 	&:hover {
-		background-color: #898989;
+		background-color: #EFEFEF;
 		text-decoration: none;
 		color: white;
 		cursor: pointer;
@@ -70,7 +94,7 @@ a.navbar-brand {
 
 	&:focus {
 		text-decoration: none;
-		color: lightgrey;
+		color: #EFEFEF;
 	}
 
 	&:visited {
