@@ -23,6 +23,7 @@ source 'https://rubygems.org'
  gem 'figaro'
  gem 'devise'
  gem 'pundit'
+ gem "simple_calendar", "~> 2.0"
 
  group :development, :test do
    gem 'byebug'

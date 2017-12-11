@@ -1,0 +1,19 @@
+<div class="container-fluid">  
+  <p id="notice"><%= notice %></p>
+
+
+  <h1>Listing Events</h1>
+  <%= month_calendar events: @league.events do |date,events| %>
+    <%= date.day %>
+
+    <% events.each do |event|%>
+      <div>
+        <%= link_to event.title, edit_league_event_path(event.league, event) %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <br>
+
+  <%= link_to 'New Event', new_league_event_path %>
+</div>

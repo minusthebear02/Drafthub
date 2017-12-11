@@ -1,6 +1,6 @@
 <h1>Editing Team</h1>
 
-<%= render 'form' %>
+<%= render partial: 'form', locals: { league: @team.league, team: @team } %>
 
 <%= link_to 'Delete Team', [@team.league, @team], method: :delete, class: "user-button button-cancel"%>
 <br>

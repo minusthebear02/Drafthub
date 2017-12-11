@@ -9,7 +9,8 @@
         <tr>
           <th class="col-md-3">Name</th>
           <th class="col-md-2">Created By</th>
-          <th colspan="3"></th>
+          <th class="col-md-2"># of Teams</th>
+          <th class="col-md-2">Available Teams</th>
         </tr>
       </thead>
 
@@ -18,6 +19,8 @@
           <tr>
             <td><%= link_to league.name, league %></td>
             <td><%= league.user.email%></td>
+            <td><%= league.teams.length %></td>
+            <td><%= league.number_of_teams - league.teams.length%></td>
             <% if league.user == current_user %>
               <td><%= link_to 'Edit', edit_league_path(league), class: "user-button" %></td>
               <td><%= link_to 'Destroy', league, class: "user-button button-cancel", method: :delete, data: { confirm: 'Are you sure?' } %></td>

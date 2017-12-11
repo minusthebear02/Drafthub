@@ -1,5 +1,5 @@
 <h1>New Team</h1>
 
-<%= render 'form', locals: {league: @league, team: @team} %>
+<%= render partial 'form', locals: { league: @league, team: @team } %>
 
 <%= link_to 'Back', league_path(@league) %>

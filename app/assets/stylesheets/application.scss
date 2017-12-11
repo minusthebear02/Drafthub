@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require simple_calendar
  */
 
 body {
@@ -88,7 +89,7 @@ a.navbar-brand {
 	&:hover {
 		background-color: #EFEFEF;
 		text-decoration: none;
-		color: white;
+		color: #3d3d3d !important;
 		cursor: pointer;
 	}
 
