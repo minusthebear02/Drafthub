@@ -1,14 +1,49 @@
 <div class="jumbotron">
     <div class="container welcome-header">
-        <h1 class="title">Draft Hub</h1>
-
-        <div class="container">
-            <div class="row welcome-buttons">
-                <%= link_to "Browse All Leagues", leagues_path, class: "jumbo-link" %>
-                <%= link_to "Create a League", new_league_path, class: "jumbo-link" %>
-                <%= link_to "My Teams", teams_path, class: "jumbo-link" %> 
-            </div>
-        </div>
+        <h2 class="tagline">Organize your fantasy life</h2>
     </div>
-
 </div>
+
+<section class="selling-points">
+    <figure class="point-link active" id="point-schedule">
+        <%= image_tag "calendar-512.png" %>
+        <figcaption>Schedule</figcaption>
+        <%= image_tag "down-arrow.jpg", class: "down-arrow" %>
+    </figure>
+    <figure class="point-link" id="point-customize">
+        <%= image_tag "customize-icon.png" %>
+        <figcaption>Customize</figcaption>
+        <%= image_tag "down-arrow.jpg", class: "down-arrow" %>
+    </figure>
+    <figure class="point-link" id="point-organize">
+        <%= image_tag "money-icon.svg" %>
+        <figcaption>Organize</figcaption>
+        <%= image_tag "down-arrow.jpg", class: "down-arrow" %>
+    </figure>
+
+    
+        <article class="point-content" id="content-schedule">
+            <%= image_tag "january-calendar.png", class: "point-image" %>
+            <h3 class="point-title">Trouble scheduling draft day?</h3>
+            <p class="point-paragraph">Trying to schedule a 3+ hour draft that works for everyone can be a nightmare. With DraftHub, each league has a shared calendar.
+            <br><br>
+            On it, each team owner inputs the dates and times that don’t work for them. Once all  owners have shared their busy days, what remains are the possible draft dates.</p>
+        </article>
+        <article class="point-content" id="content-customize">
+            <%= image_tag "customize_image.png", class: "point-image" %>
+            <h3 class="point-title">Draft the way you want to.</h3>
+            <p class="point-paragraph">Customize all aspects of your draft, from keepers and pick trades to time limits and draft order. Want to limit picks to 30 seconds each? Sure! Want to give one player 5 first round picks? You're call!
+            <br><br>
+            Many of the fantasy leagues around today don’t give you full control over your league’s draft. We're here to fix that.</p>
+        </article>
+        <article class="point-content" id="content-organize">
+            <%= image_tag "money-image.png", class: "point-image" %>
+            <h3 class="point-title">Let us handle the dues.</h3>
+            <p class="point-paragraph">A third party handling dues collection and dispursements means no funny business. Set a payout schedule before the season starts that can only be changed by a unanimous league wide vote mid-season.
+            <br><br>
+            Keep track of who has paid their dues and who hasn’t extremely easily.</p>
+        </article>
+    
+        
+  
+</section>

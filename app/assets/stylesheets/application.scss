@@ -16,20 +16,20 @@
  */
 
 body {
-		padding-top: 50px;
 		color: #3d3d3d;
 }
 
 .navbar {
-		background-color: #3B5;
+		background-color: rgba(0,0,0,0);
 		border: none !important;
-		margin-bottom: 0;
+		margin-top: 25px;
 
 		a {
 			color: white;
 
 			&:hover {
-				color: #3d3d3d;
+				background-color: rgba(0,0,0,0) !important;
+				color: white;
 			}
 		}
 }
@@ -37,12 +37,12 @@ body {
 a.navbar-brand {
 	margin-left: 35px;
 	transition: all 0.3s;
+	display: flex;
+	align-items: center;
 
 	&:hover {
-		color: white !important;
 		font-size: 2rem;
 		margin-left: 30px;
-		background-color: inherit;
 	}
 }
 
@@ -59,7 +59,6 @@ a.navbar-brand {
 	border-radius: 0px !important;
 	border-bottom-left-radius: 5px !important;
 	border-bottom-right-radius: 5px !important;
-	background-color: #EFEFEF;
 	min-height: 0 !important;
 
 	.nav li {
@@ -70,11 +69,6 @@ a.navbar-brand {
 		color: #3d3d3d;
 		margin-bottom: 0;
 		height: 45px;
-
-		&:hover {
-			background-color: #3d3d3d !important;
-			color: white;
-		}
 	}
 }
 
@@ -126,6 +120,12 @@ a.navbar-brand {
 			margin-bottom: 19px;
 		}
 	}
+}
+
+.footer {
+	display: grid;
+	grid-template: 100px / 1fr 60% 1fr;
+	background-color: #199FE0;
 }
 
 @import "bootstrap-sprockets";
